@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "field:customer_name",
+ "creation": "2021-08-27 12:18:32.993843",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "customer_id",
+  "phn_nmbr",
+  "mail_id",
+  "customer_loan"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "customer name",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "label": "customer ID"
+  },
+  {
+   "fieldname": "phn_nmbr",
+   "fieldtype": "Data",
+   "label": "Phn nmbr"
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Mail id"
+  },
+  {
+   "fieldname": "customer_loan",
+   "fieldtype": "Table",
+   "label": "customer_loan",
+   "options": "customer_loan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-29 11:13:55.768714",
+ "modified_by": "Administrator",
+ "module": "Loan Management",
+ "name": "customer details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
