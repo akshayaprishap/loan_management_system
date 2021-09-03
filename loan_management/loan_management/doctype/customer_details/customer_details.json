@@ -10,7 +10,8 @@
   "customer_id",
   "phn_nmbr",
   "mail_id",
-  "customer_loan"
+  "customer_loan",
+  "loan_type"
  ],
  "fields": [
   {
@@ -39,11 +40,17 @@
    "fieldtype": "Table",
    "label": "customer_loan",
    "options": "customer_loan"
+  },
+  {
+   "fieldname": "loan_type",
+   "fieldtype": "Select",
+   "label": "Loan type",
+   "options": "Housing Loan\nPersonal Loan\nJewel Loan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-29 11:13:55.768714",
+ "modified": "2021-09-01 19:37:21.669694",
  "modified_by": "Administrator",
  "module": "Loan Management",
  "name": "customer details",

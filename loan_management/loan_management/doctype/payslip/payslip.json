@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:customer_name",
+ "autoname": "series.#####",
  "creation": "2021-08-27 12:37:40.258991",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,6 +11,8 @@
   "monthly_pay",
   "total_amount",
   "balance",
+  "type_of_loan",
+  "loan_paying_date",
   "amended_from"
  ],
  "fields": [
@@ -26,6 +28,7 @@
    "label": "Monthly pay"
   },
   {
+   "fetch_from": "id.total_amount",
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total amount"
@@ -51,11 +54,22 @@
    "label": "Customer Name",
    "options": "customer details",
    "unique": 1
+  },
+  {
+   "fetch_from": "id.loan_type",
+   "fieldname": "type_of_loan",
+   "fieldtype": "Data",
+   "label": "Type of Loan"
+  },
+  {
+   "fieldname": "loan_paying_date",
+   "fieldtype": "Date",
+   "label": "Loan Paying Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-29 16:29:06.593809",
+ "modified": "2021-09-02 19:41:44.561603",
  "modified_by": "Administrator",
  "module": "Loan Management",
  "name": "payslip",
